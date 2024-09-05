@@ -1,0 +1,19 @@
+using System;
+
+public class SquareNumberProgram
+{
+    // This method takes an integer and returns its square.
+    public static int SquareNumber(int number)
+    {
+        return number * number;
+    }
+
+    static void Main()
+    {
+        // Compute the square of the number 5
+        int result = SquareNumber(5);
+
+        // Output the result
+        Console.WriteLine($"The square of 5 is: {result}");  // Output: The square of 5 is: 25
+    }
+}
