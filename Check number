@@ -1,0 +1,30 @@
+using System;
+
+public class CheckNumberProgram
+{
+    // This method returns whether the number is Positive, Negative, or Zero.
+    public static string CheckNumber(int number)
+    {
+        if (number > 0)
+        {
+            return "Positive";
+        }
+        else if (number < 0)
+        {
+            return "Negative";
+        }
+        else
+        {
+            return "Zero";
+        }
+    }
+
+    static void Main()
+    {
+        // Check the status of the number -7
+        string message = CheckNumber(-7);
+
+        // Output the result
+        Console.WriteLine($"The number -7 is: {message}");  // Output: The number -7 is: Negative
+    }
+}
