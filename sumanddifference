@@ -1,0 +1,23 @@
+using System;
+
+public class SumAndDifferenceProgram
+{
+    
+    public static (int Sum, int Difference) SumAndDifference(int a, int b)
+    {
+        int sumResult = a + b;
+        int differenceResult = a - b;
+        return (sumResult, differenceResult);
+    }
+
+    static void Main()
+    {
+        
+        var result = SumAndDifference(10, 3);
+
+        
+        Console.WriteLine($"For the numbers 10 and 3:");
+        Console.WriteLine($"Sum: {result.Sum}");            
+        Console.WriteLine($"Difference: {result.Difference}"); 
+    }
+}
